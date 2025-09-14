@@ -1,0 +1,5 @@
+export type MarginSize = 1
+  | 2
+  | 3
+  | 4
+  | 5;

@@ -1,0 +1,161 @@
+.progress-tracker-wrapper {
+  padding-right:36px;
+}
+
+.progress-tracker {
+    padding:20px;
+    min-width:700px;
+    display:flex;
+    gap:0;
+}
+.progress-tracker  > * {
+    flex: 1 1 0;
+    min-width:0;
+    position:relative;
+    height:100px;
+    line-height:100px;
+    padding:0 20px;
+    border:1px solid #ccc;
+    margin-right:4px;
+    background-color:#EEE;
+    display:flex;
+    align-items:center;
+}
+
+.progress-tracker  > *:not(:last-child):after {
+    content:'';
+    border-top:1px solid #ccc;
+    border-right:1px solid #ccc;
+    width:71px;
+    height:71px;
+    position:absolute;
+    right:0;
+    top:-4px;
+    background-color:#EEE;
+    z-index:150;
+    
+    -webkit-transform: translate(37px,18px) rotate(45deg);
+       -moz-transform: translate(37px,18px) rotate(45deg);
+        -ms-transform: translate(37px,18px) rotate(45deg);
+         -o-transform: translate(37px,18px) rotate(20deg); 
+            transform: translate(37px,18px) rotate(45deg);
+}
+
+.progress-tracker > *:not(:first-child) {
+    flex-basis: 60px;
+    margin-left:0;
+}
+
+.progress-tracker > *:last-child:after {
+    content:'';
+    border:1px solid #ccc;
+    border-width:1px 1px 1px 0;
+    width:35px;
+    height:100px;
+    position:absolute;
+    right:-35px;
+    background-color:#EEE;
+    z-index:150;
+}
+
+.progress-tracker > *.clickable {
+    cursor:pointer;
+    font-weight:bold;
+}
+.progress-tracker  > *.success, .progress-tracker  > *.success:after {
+    background-color:#198754;
+    color:white;
+    }
+    .progress-tracker  > *.success.clickable:hover, .progress-tracker  > *.success.clickable:hover:after {
+        background-color:#106d42;
+    }
+
+.progress-tracker  > *.primary, .progress-tracker > *.primary:after {
+        background-color:#0d6efd;
+        color:white;
+    }
+    .progress-tracker  > *.primary.clickable:hover, .progress-tracker  > *.primary.clickable:hover:after {
+        background-color:#0856cc;
+    }
+
+.progress-tracker  > *.warning, .progress-tracker > *.warning:after {
+        background-color:#ffc107;
+        color:black;
+    }
+    .progress-tracker  > *.warning.clickable:hover, .progress-tracker  > *.warning.clickable:hover:after {
+        background-color:#ca9a08;
+    }
+
+.progress-tracker  > *.danger, .progress-tracker > *.danger:after {
+        background-color:#dc3545;
+        color:white;
+    }
+    .progress-tracker  > *.danger.clickable:hover, .progress-tracker  > *.danger.clickable:hover:after {
+        background-color:#ac212f;
+    }
+    
+.progress-tracker  .text {
+    position:relative;
+    left:20px;
+    z-index:200 !important;
+    text-align:center;
+    line-height:20px;
+    width:100%;
+}
+
+.progress-tracker .helpText {
+    position:absolute;
+    top:100px;
+    left:20px;
+    text-align:center;
+    line-height:12px;
+    font-size: 12px;
+    width:100%;
+    z-index:200 !important;
+}
+
+.progress-tracker .success .text::after {
+    content: "";
+    position: absolute;
+    right: -30px;                     /* tweak position */
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    opacity: .38;
+    background-color: currentColor;
+    
+    -webkit-mask: url('data:image/svg+xml;utf8,\
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">\
+<path fill="%23fff" d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>\
+<path fill="%23fff" d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>\
+</svg>') center / 100% 100% no-repeat;
+    mask: url('data:image/svg+xml;utf8,\
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">\
+<path fill="%23fff" d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>\
+<path fill="%23fff" d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>\
+</svg>') center / 100% 100% no-repeat;
+}
+
+.progress-tracker .clickable .text::after {
+    content: "";
+    position: absolute;
+    right: -30px;                     /* tweak position */
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    opacity: .80;
+    background-color: currentColor;
+    
+    -webkit-mask: url('data:image/svg+xml;utf8,\
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">\
+<path fill="%23fff" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>\
+</svg>') center / 100% 100% no-repeat;
+    mask: url('data:image/svg+xml;utf8,\
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">\
+<path fill="%23fff" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>\
+</svg>') center / 100% 100% no-repeat;
+}

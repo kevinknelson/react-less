@@ -1,0 +1,87 @@
+/* #region BOOTSTRAP OVERRIDES*/
+:root {
+  --bs-font-sans-serif: "Tahoma", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.btn:disabled {
+  background-color:rgba(0,0,0,0.1);
+  border-color:rgba(0,0,0,0.2);
+  color:rgba(0,0,0,0.4);
+}
+
+.btn-primary:hover {
+    background-color: #305792 !important;
+    border-color: #305792 !important;
+    color: #fff;
+}
+
+.card-header-tabs .nav-link { 
+    background-color: rgba(0, 0, 0, 0.03);
+    border-width:1px 1px 0 1px !important;
+    border: solid #DDD;
+    color:navy;
+    }
+    
+    .card-header-tabs .nav-link:hover:not(.active), .card-header-tabs .nav-link:focus:not(.active) {   
+        background-color: rgba(0, 0, 0, 0.08);
+    }
+/* #endregion BOOTSTRAP OVERRIDES */
+
+/* #region TABLE STYLES */
+.table-no-wrap th, .table-no-wrap td {
+    white-space: nowrap;
+}
+
+.table-sticky thead th {
+    position  : sticky;
+    top       : 0;
+    z-index   : 1;
+    background-color:white;
+}
+.table td.emphasis {
+    background-color: rgba(0, 0, 255, 0.05) !important; /* slightly stronger when striped */
+}
+.table-sticky thead th.emphasis {
+    background-color:#F2F2FF !important;
+}
+.table .row-number { border-right: 1px solid #CCC; text-align: center; }
+/* #endregion TABLE STYLES */
+
+/* #region FORM HELPERS */
+
+/* Only show invalid after the field has content (works well with required) */
+input:invalid:not(:placeholder-shown) { outline: 2px solid red; }
+/* Or if you add a .touched class on blur */
+.touched:invalid { outline: 2px solid red; }
+
+.input-group.range div.form-control {
+    padding: 0 8px; /* Remove padding to normalize */
+    display: flex;
+    align-items: center; /* Vertically align the range input */
+    height: 38px; /* Match the height of a standard Bootstrap input */
+    box-sizing: border-box; /* Ensure padding and borders are included in height */
+    }
+    .input-group.range .form-control .form-range {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        background: none;
+        border: none;
+        appearance: none; /* Normalize appearance across browsers */
+    }
+    .input-group.range .form-range::-webkit-slider-thumb {
+        appearance: none; /* Normalize thumb appearance in WebKit browsers */
+    }
+
+    .input-group.range .form-range::-moz-range-thumb {
+        appearance: none; /* Normalize thumb appearance in Firefox */
+    }
+
+    .input-group.range .form-range::-ms-thumb {
+        appearance: none; /* Normalize thumb appearance in Edge/IE */
+    }
+    
+/* #endregion FORM HELPERS */
+
+

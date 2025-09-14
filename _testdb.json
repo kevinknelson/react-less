@@ -1,0 +1,66 @@
+{
+  "groups": [
+    {
+      "id": "abc",
+      "name": "Kevin Has Groups Too",
+      "score": 55,
+      "owner": "Kevin",
+      "createdDateTime": "2025-09-08 19:25:00",
+      "range": "6"
+    },
+    {
+      "id": "def",
+      "name": "Steve Hates Groups",
+      "score": 24,
+      "owner": "Steve",
+      "createdDateTime": "2023-08-18 20:47:00"
+    },
+    {
+      "id": "b0cc",
+      "name": "Nick Likes All Groups",
+      "score": 3,
+      "owner": "Nick",
+      "createdDateTime": "2024-08-02 20:47:00"
+    },
+    {
+      "id": "6212",
+      "name": "Joe is a Groupie",
+      "score": 3,
+      "owner": "Joe",
+      "createdDateTime": "2023-08-18 09:15:23"
+    },
+    {
+      "id": "28c6",
+      "name": "Andrew Ignores Groups",
+      "score": 3,
+      "createdDateTime": "2025-08-19 00:38:35",
+      "owner": "Andrew"
+    },
+    {
+      "id": "cc6a",
+      "name": "Ed's Group is Fun",
+      "score": 5,
+      "createdDateTime": "2025-09-08 17:33:54",
+      "owner": "Edson"
+    },
+    {
+      "id": "af1c",
+      "name": "A New Group",
+      "owner": "Frank",
+      "score": "60",
+      "createdDateTime": "2025-09-13 16:54:00"
+    }
+  ],
+  "users": [
+    {
+      "id": "abc",
+      "name": "Alice",
+      "groupId": 1
+    },
+    {
+      "id": "def",
+      "name": "Bob",
+      "groupId": 2
+    }
+  ]
+}

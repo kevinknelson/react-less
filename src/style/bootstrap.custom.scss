@@ -1,0 +1,80 @@
+@use "../../node_modules/bootstrap/scss/bootstrap" with (
+  // Colors
+  $primary:       #183e77,
+  $secondary:     #757575,
+  $success:       #198754,
+  $info:          #0d6efd,
+  $warning:       #d36d0d,
+  $danger:        #AA0000,
+  $light:         #f8f9fa,
+  $dark:          #212529,
+
+  // Grays
+  $gray-100:      #f8f9fa,
+  $gray-200:      #e9ecef,
+  $gray-300:      #dee2e6,
+  $gray-400:      #ced4da,
+  $gray-500:      #adb5bd,
+  $gray-600:      #6c757d,
+  $gray-700:      #495057,
+  $gray-800:      #343a40,
+  $gray-900:      #212529,
+
+  // Body
+  $body-bg:       #fff,
+  $body-color:    #212529,
+
+  // Spacing
+  $spacer:        1rem,
+
+  // Border radius
+  $border-radius:           .375rem,
+  $border-radius-sm:        .25rem,
+  $border-radius-lg:        .5rem,
+  $border-radius-xl:        1rem,
+  $border-radius-xxl:       2rem,
+  $border-radius-pill:      50rem,
+
+  // Font
+  $font-family-sans-serif: "Tahoma, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji",
+  $font-size-base:          1rem,
+  $font-weight-base:        400,
+  $line-height-base:        1.5,
+
+  // Buttons
+  $btn-padding-y:           .375rem,
+  $btn-padding-x:           .75rem,
+  $btn-border-radius:       .375rem,
+
+  // Navbar
+  $navbar-padding-y:        .5rem,
+  $navbar-padding-x:        1rem,
+  $navbar-dark-color:       rgba(255,255,255,.55),
+  $navbar-light-color:      rgba(0,0,0,.55),
+
+  // Cards
+  $card-spacer-y:           1rem,
+  $card-spacer-x:           1rem,
+  $card-border-radius:      .375rem,
+
+  // Forms
+  $input-padding-y:         .375rem,
+  $input-padding-x:         .75rem,
+  $input-border-radius:     .375rem,
+
+  // Shadows
+  $box-shadow:              0 .5rem 1rem rgba(0,0,0,.15),
+
+  // Z-index
+  $zindex-dropdown:         1000,
+  $zindex-sticky:           1020,
+  $zindex-fixed:            1030,
+  $zindex-modal-backdrop:   1040,
+  $zindex-modal:            1050,
+  $zindex-popover:          1070,
+  $zindex-tooltip:          1080
+
+  // ...add more as needed from Bootstrap's _variables.scss
+);
+
+
