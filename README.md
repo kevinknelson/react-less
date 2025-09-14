@@ -1,4 +1,8 @@
 # react-less
+* prop-drill less
+* boilerplate less
+* write less
+  
 The sheer amount of boilerplate/wiring I was doing was driving me nuts. So, I put together this project so that I could much more rapidly get the simple CRUD operations out of the way and focus on bigger things.
 
 This has not been fully tested in any meaningful way, but it should work out of the box using json-server file packaged in here for testing without the need to setup a full environment.
