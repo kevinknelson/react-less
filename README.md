@@ -15,6 +15,7 @@ export interface Group extends IRestModel {
     owner           : string,
 }
 
+//<Group,Group> is so that you "can" use a separate model for your list if desired (helpful for wide tables, etc.)
 export const GroupApi = RestApi.createApi<Group, Group>(`${api}/groups`)
     .makeHooks();
 ```
@@ -27,7 +28,7 @@ export const GroupApi = RestApi.createApi<Group, Group>(`${api}/groups`)
 
   const groupList = apiResponse?.payload ?? null;
 
-  return <>...your HTML...</>
+  return <>...your HTML table...</>
 ```
 
 ### Step 3 - Setup your form with a useForm hook
